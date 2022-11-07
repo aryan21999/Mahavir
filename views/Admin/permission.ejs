@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sudanese Business Club</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="/public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="/public/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="/public/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard">
+                <div class="sidebar-brand-text mx-3">Admin Panel</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="dashboard">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="posts">
+                    <i class="fa fa-list"></i>
+                    <span>Posts</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="govermentProject">
+                    <i class="fa fa-list"></i>
+                    <span>Government Projects</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="projects">
+                    <i class="fa fa-list"></i>
+                    <span>Projects</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="jobs">
+                    <i class="fa fa-list"></i>
+                    <span>Jobs</span></a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive"
+                    aria-expanded="true" aria-controls="collapseFive">
+                    <i class="fa fa-list"></i>
+                    <span>Job Post Categories</span>
+                </a>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="jobCategoryList">Job Category</a>
+                        <a class="collapse-item" href="jobTypeList">Job Type</a>
+                        <a class="collapse-item" href="workplaceTypeList">Work Place Type</a>
+                        <a class="collapse-item" href="experienceList">Experienced</a>
+                        <a class="collapse-item" href="salaryBudgetList">Salary Budget</a>
+                        <a class="collapse-item" href="qualificationList">Qualification</a>
+                        <a class="collapse-item" href="extraBenifitList">Extra Benifits</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <li class="nav-item">
+                <a class="nav-link" href="jobSeeker">
+                    <i class="fa fa-list"></i>
+                    <span>Job Seeker</span></a>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fa fa-list"></i>
+                    <span>Organization</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="approveStartupList">StartUps</a>
+                        <a class="collapse-item" href="approveExperiencedCompanyList">Experienced Companies</a>
+                        <a class="collapse-item" href="approveBankerList">Bankers</a>
+                        <a class="collapse-item" href="approveInvestorList">Investors</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="subAdmin">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Sub-Admin</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="404">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Customer Support</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="subscription_list">
+                    <i class="fa fa-credit-card"></i>
+                    <span>Subscription Plan</span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Profile Management</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="change_password">Change Password</a>
+                        <a class="collapse-item" href="profile">Profile</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">SUDANESE - Admin</span>
+                                <img class="img-profile rounded-circle" src="/public/img/pic.jpg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="profile">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <h4 class="page-title">Permission</h4>
+                                <ol class="breadcrumb">
+
+                                </ol>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card m-b-20">
+                                <div class="card-body table-responsive">
+
+                                    <!-- <h4 class="mt-0 header-title">Basic example</h4> -->
+
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>User</th>
+                                                <th>
+                                                    <%= usersList[0].username %>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Dashboard</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.dashboard){ %>
+                                                        <input type="checkbox" id="switch0" switch="primary"
+                                                            onclick="permissionClick('dashboard','switch0')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch0" switch="primary"
+                                                                onclick="permissionClick('dashboard','switch0')" />
+                                                            <% } %>
+                                                                <label for="switch0" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Goverment Projects</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.govermentProject){ %>
+                                                        <input type="checkbox" id="switch21" switch="primary"
+                                                            onclick="permissionClick('govermentProject','switch21')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch21" switch="primary"
+                                                                onclick="permissionClick('govermentProject','switch21')" />
+                                                            <% } %>
+                                                                <label for="switch21" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Projects</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.projects){ %>
+                                                        <input type="checkbox" id="switch1" switch="primary"
+                                                            onclick="permissionClick('projects','switch1')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch1" switch="primary"
+                                                                onclick="permissionClick('projects','switch1')" />
+                                                            <% } %>
+                                                                <label for="switch1" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Posts</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.posts){ %>
+                                                        <input type="checkbox" id="switch2" switch="primary"
+                                                            onclick="permissionClick('posts','switch2')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch2" switch="primary"
+                                                                onclick="permissionClick('posts','switch2')" />
+                                                            <% } %>
+                                                                <label for="switch2" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Jobs</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.jobs){ %>
+                                                        <input type="checkbox" id="switch20" switch="primary"
+                                                            onclick="permissionClick('jobs','switch20')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch20" switch="primary"
+                                                                onclick="permissionClick('jobs','switch20')" />
+                                                            <% } %>
+                                                                <label for="switch20" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Job category</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.jobCategory){ %>
+                                                        <input type="checkbox" id="switch3" switch="primary"
+                                                            onclick="permissionClick('jobCategory','switch3')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch3" switch="primary"
+                                                                onclick="permissionClick('jobCategory','switch3')" />
+                                                            <% } %>
+                                                                <label for="switch3" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Job type</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.jobType){ %>
+                                                        <input type="checkbox" id="switch4" switch="primary"
+                                                            onclick="permissionClick('jobType','switch4')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch4" switch="primary"
+                                                                onclick="permissionClick('jobType','switch4')" />
+                                                            <% } %>
+                                                                <label for="switch4" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Work Place Type</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.workplaceType){ %>
+                                                        <input type="checkbox" id="switch19" switch="primary"
+                                                            onclick="permissionClick('workplaceType','switch19')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch19" switch="primary"
+                                                                onclick="permissionClick('workplaceType','switch19')" />
+                                                            <% } %>
+                                                                <label for="switch19" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Experience</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.experience){ %>
+                                                        <input type="checkbox" id="switch5" switch="primary"
+                                                            onclick="permissionClick('experience','switch5')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch5" switch="primary"
+                                                                onclick="permissionClick('experience','switch5')" />
+                                                            <% } %>
+                                                                <label for="switch5" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Salary Budget</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.salaryBudget){ %>
+                                                        <input type="checkbox" id="switch6" switch="primary"
+                                                            onclick="permissionClick('salaryBudget','switch6')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch6" switch="primary"
+                                                                onclick="permissionClick('salaryBudget','switch6')" />
+                                                            <% } %>
+                                                                <label for="switch6" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Qualification</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.qualification){ %>
+                                                        <input type="checkbox" id="switch7" switch="primary"
+                                                            onclick="permissionClick('qualification','switch7')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch7" switch="primary"
+                                                                onclick="permissionClick('qualification','switch7')" />
+                                                            <% } %>
+                                                                <label for="switch7" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Extra-Benfit</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.extraBenefit){ %>
+                                                        <input type="checkbox" id="switch8" switch="primary"
+                                                            onclick="permissionClick('extraBenefit','switch8')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch8" switch="primary"
+                                                                onclick="permissionClick('extraBenefit','switch8')" />
+                                                            <% } %>
+                                                                <label for="switch8" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Skill</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.skill){ %>
+                                                        <input type="checkbox" id="switch9" switch="primary"
+                                                            onclick="permissionClick('skill','switch9')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch9" switch="primary"
+                                                                onclick="permissionClick('skill','switch9')" />
+                                                            <% } %>
+                                                                <label for="switch9" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Startup</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.startup){ %>
+                                                        <input type="checkbox" id="switch10" switch="primary"
+                                                            onclick="permissionClick('startup','switch10')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch10" switch="primary"
+                                                                onclick="permissionClick('startup','switch10')" />
+                                                            <% } %>
+                                                                <label for="switch10" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Experienced Companies</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.experiencedCompany){ %>
+                                                        <input type="checkbox" id="switch11" switch="primary"
+                                                            onclick="permissionClick('experiencedCompany','switch11')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch11" switch="primary"
+                                                                onclick="permissionClick('experiencedCompany','switch11')" />
+                                                            <% } %>
+                                                                <label for="switch11" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Job-Seeker</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.jobSeeker){ %>
+                                                        <input type="checkbox" id="switch12" switch="primary"
+                                                            onclick="permissionClick('jobSeeker','switch12')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch12" switch="primary"
+                                                                onclick="permissionClick('jobSeeker','switch12')" />
+                                                            <% } %>
+                                                                <label for="switch12" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Banker</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.banker){ %>
+                                                        <input type="checkbox" id="switch13" switch="primary"
+                                                            onclick="permissionClick('banker','switch13')" checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch13" switch="primary"
+                                                                onclick="permissionClick('banker','switch13')" />
+                                                            <% } %>
+                                                                <label for="switch13" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Sub-Admin</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.subAdmin){ %>
+                                                        <input type="checkbox" id="switch14" switch="primary"
+                                                            onclick="permissionClick('subAdmin','switch14')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch14" switch="primary"
+                                                                onclick="permissionClick('subAdmin','switch14')" />
+                                                            <% } %>
+                                                                <label for="switch14" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">User</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.user){ %>
+                                                        <input type="checkbox" id="switch15" switch="primary"
+                                                            onclick="permissionClick('user','switch15')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch15" switch="primary"
+                                                                onclick="permissionClick('user','switch15')" />
+                                                            <% } %>
+                                                                <label for="switch15" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Subscription Plan</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.subscriptionPlan){ %>
+                                                        <input type="checkbox" id="switch16" switch="primary"
+                                                            onclick="permissionClick('subscriptionPlan','switch16')"
+                                                            checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch16" switch="primary"
+                                                                onclick="permissionClick('subscriptionPlan','switch16')" />
+                                                            <% } %>
+                                                                <label for="switch16" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Feedback</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.feedback){ %>
+                                                        <input type="checkbox" id="switch17" switch="primary"
+                                                            onclick="permissionClick('feedback','switch17')" checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch17" switch="primary"
+                                                                onclick="permissionClick('feedback','switch17')" />
+                                                            <% } %>
+                                                                <label for="switch17" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">Query</th>
+                                                <td>
+                                                    <% if(userRoleDetail[0]?.query){ %>
+                                                        <input type="checkbox" id="switch18" switch="primary"
+                                                            onclick="permissionClick('query','switch18')" checked />
+                                                        <% } else{ %>
+                                                            <input type="checkbox" id="switch18" switch="primary"
+                                                                onclick="permissionClick('query','switch18')" />
+                                                            <% } %>
+                                                                <label for="switch18" data-on-label="Yes"
+                                                                    data-off-label="No"></label>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+
+
+                    </div> <!-- end row -->
+
+
+
+                </div> <!-- container-fluid -->
+
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Select "Logout" below if you are ready to end your current session.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="logout">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="/public/vendor/jquery/jquery.min.js"></script>
+    <script src="/public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="/public/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="/public/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="/public/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/public/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="/public/js/demo/datatables-demo.js"></script>
+
+    <!-- Js Start -->
+    <script>
+        function permissionClick(module, id) {
+            if ($('#' + id).is(':checked')) {
+                var dash = true;
+            }
+            else {
+                var dash = false;
+            }
+            var user_id = window.location.pathname.split('permission')[1];
+            console.log(dash, window.location.pathname.split('permission')[1]);
+
+            $.ajax({
+                url: "/permissionUser",
+                data: { module: module, value: dash, user_id: user_id },
+                type: "GET",
+                contentType: "application/json",
+                dataType: "json",
+                success: function (response) {
+                    $("#editId").val(response._id); //editWatumiaji
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    $("#editfirstname").val("");
+                }
+            });
+        }
+    </script>
+    <!-- End Js -->
+
+</body>
+
+</html>
